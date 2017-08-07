@@ -7,7 +7,7 @@ html,body{
 margin:0;
 padding:0;
 font-family: 'Open Sans', sans-serif;
-background: #fff url(../images/bg.jpg) center top no-repeat;
+background: #F7DF1E;
 background-size: cover;
 height: 100%;
 width: 100%;
@@ -36,12 +36,17 @@ float: left;
 .header{
 	margin-top: 160px;
 	margin-bottom: 40px;
+	text-align: center;
 }
 
+.header img{
+	width: 200px;
+	margin: 0 auto;
+}
 
 h1{
 font-family: 'Open Sans', sans-serif;
-color: #fff;
+color: #000;
 text-align: center;
 font-size: 50px;
 font-weight: 300;
@@ -58,7 +63,7 @@ h2{
 	text-align: center;
 	font-weight: 300;
 	font-size: 20px;
-		color: #ffffff;
+		color: #000;
 
 }
 
@@ -70,19 +75,18 @@ h2 strong{
 
 .information{
 width: 480px;
-padding-top: 35px;
 margin: 0 auto;
 }
 
 h3{
 font-size: 28px;
 font-weight: 600;
-color: #ffffff;
+color: #000;
 }
 
 .information p{
 font-size: 16px;
-color: #ffffff;
+color: #000;
 display: block;
 }
 
@@ -93,7 +97,7 @@ margin-top: 20px;
 }
 
 .field{
-background: url(../images/field.png) repeat;
+background: #000;
 width: 448px;
 -webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
 border: none;
@@ -105,10 +109,6 @@ padding: 15px;
 margin-bottom: 15px;
 outline: none;
 }
-	.field:focus {
-	border: 1px solid #ffffff;
-	padding: 14px;
-	}
 @media only screen and (max-width: 480px)  {
 	.information{
 	width: 100%;
@@ -125,17 +125,18 @@ outline: none;
 }
 
 .submit{
-position: absolute;
-right: 15px;
-top: 13px;
-padding: 3px 10px;
--webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
-background: #ffffff;
-border: none;
-font-family: 'Lato', sans-serif;
-font-size: 14px;
-font-weight: bold;
-cursor: pointer;
+	position: absolute;
+	right: 15px;
+	top: 13px;
+	padding: 3px 10px;
+	-webkit-border-radius: 30px;-moz-border-radius: 30px;border-radius: 30px;
+	background: #ffffff;
+	border: none;
+	font-family: 'Lato', sans-serif;
+	font-size: 14px;
+	font-weight: bold;
+	cursor: pointer;
+	outline: none;
 }
 
 

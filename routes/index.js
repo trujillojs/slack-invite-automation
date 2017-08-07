@@ -28,21 +28,21 @@ router.post('/invite', function(req, res) {
         if (body.ok) {
           res.render('result', {
             community: config.community,
-            message: 'Success! Check &ldquo;'+ req.body.email +'&rdquo; for an invite from Slack.'
+		  message: 'Listo! Revisa &ldquo;' + req.body.email +'&rdquo; Para una invitación de Slack.'
           });
         } else {
           var error = body.error;
           if (error === 'already_invited' || error === 'already_in_team') {
             res.render('result', {
               community: config.community,
-              message: 'Success! You were already invited.<br>' +
-                       'Visit <a href="https://'+ config.slackUrl +'">'+ config.community +'</a>'
+		    message: '¡Éxito! Ya estas invitado.<br>' +
+                       'Visita <a href="https://'+ config.slackUrl +'">'+ config.community +'</a>'
             });
             return;
           } else if (error === 'invalid_email') {
-            error = 'The email you entered is an invalid email.';
+			error = 'El correo electrónico que has ingresado es un correo electrónico no válido.';
           } else if (error === 'invalid_auth') {
-            error = 'Something has gone wrong. Please contact a system administrator.';
+			error = 'Algo ha salido mal. Póngase en contacto con un administrador del sistema. hola@trujillojs.org';
           }
 
           res.render('result', {
